@@ -1,0 +1,60 @@
+# ==========================================
+# BAZEL AUTO-GENERATED SYMLINKS & OUTPUTS
+# ==========================================
+/bazel-*
+
+# If you prefer to explicitly list them instead of the wildcard above:
+# /bazel-bin
+# /bazel-out
+# /bazel-testlogs
+# /bazel-skills
+
+# Local user-specific configuration overrides for Bazel
+.bazelrc.user
+user.bazelrc
+
+# ==========================================
+# JAVASCRIPT & PNPM DEPS / RUNTIMES
+# ==========================================
+**/node_modules/
+**/.pnpm-debug.log*
+
+# Ignore local environment config overrides
+.env
+.env.local
+
+# ==========================================
+# JAVA / SPRING BOOT RUNTIMES & IDE METADATA
+# ==========================================
+# Ignore standard compilation class artifacts if run outside Bazel
+**/target/
+**/*.class
+**/*.jar
+**/*.war
+
+# IDE metadata folders (IntelliJ IDEA, Eclipse, VS Code)
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.vscode/
+
+# ==========================================
+# C++ COMPILATION ARTIFACTS (Local Overrides)
+# ==========================================
+**/*.o
+**/*.obj
+**/*.a
+**/*.lib
+**/*.so
+**/*.dylib
+**/*.exe
+**/*.out
+
+# ==========================================
+# SYSTEM & LOG FILES
+# ==========================================
+.DS_Store
+Thumbs.db
+*.log
